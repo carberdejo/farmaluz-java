@@ -352,8 +352,8 @@
                         <th><i class="fas fa-hashtag me-1"></i>Código</th>
                         <th><i class="fas fa-pills me-1"></i>Nombre</th>
                         <th><i class="fas fa-file-alt me-1"></i>Descripción</th>
-                        <th><i class="fas fa-calendar-plus me-1"></i>Entrada</th>
-                        <th><i class="fas fa-calendar-check me-1"></i>Último</th>
+                        <th><i class="fas fa-calendar-plus me-1"></i>Fecha Creacion</th>
+                        <th><i class="fas fa-calendar-check me-1"></i>Fecha Vencimiento</th>
                         <th><i class="fas fa-dollar-sign me-1"></i>Precio</th>
                         <th><i class="fas fa-cubes me-1"></i>Stock</th>
                         <th><i class="fas fa-flask me-1"></i>Laboratorio</th>
@@ -489,13 +489,13 @@
                         <c:if test="${productoEditar != null}">
                             <div class="col-md-3">
                                 <label class="form-label">
-                                    <i class="fas fa-calendar-plus me-1"></i>Fecha Entrada
+                                    <i class="fas fa-calendar-plus me-1"></i>Fecha Creacion
                                 </label>
                                 <input type="date" name="fec_inicio" class="form-control" value="${productoEditar.fec_entrada}"/>
                             </div>
                             <div class="col-md-3">
                                 <label class="form-label">
-                                    <i class="fas fa-calendar-check me-1"></i>Fecha Último
+                                    <i class="fas fa-calendar-check me-1"></i>Fecha Vencimiento
                                 </label>
                                 <input type="date" name="fec_ultimo" class="form-control" value="${productoEditar.fec_ultimo}"/>
                             </div>
