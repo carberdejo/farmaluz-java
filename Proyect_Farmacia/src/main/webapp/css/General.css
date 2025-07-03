@@ -1,0 +1,117 @@
+
+
+:root {
+    --primary-gradient: linear-gradient(135deg, #6EE7B7 0%, #3B82F6 100%);
+    --secondary-gradient: linear-gradient(135deg, #FBCFE8 0%, #E0E7FF 100%);
+    --success-gradient: linear-gradient(135deg, #4ADE80 0%, #3B82F6 100%);
+    --warning-gradient: linear-gradient(135deg, #FDE68A 0%, #FCA5A5 100%);
+    --danger-gradient: linear-gradient(135deg, #FB7185 0%, #FBCFE8 100%);
+    --info-gradient: linear-gradient(135deg, #A7F3D0 0%, #BFDBFE 100%);
+    --dark-gradient: linear-gradient(135deg, #6B7280 0%, #4B5563 100%);
+}
+
+body {
+    background: linear-gradient(135deg, #4ADE80 0%, #3B82F6 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+}
+
+.main-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 30px;
+    flex-grow: 1;
+    margin-left: 280px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.header-section {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section h2 {
+    margin: 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    color: #495057;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+ /* Mensajes de sesión */
+ 
+        .alert-custom-success {
+            background: linear-gradient(45deg, #6EE7B7, #3B82F6);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 0.5s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-container {
+                margin: 10px;
+                padding: 20px;
+                margin-left: 0;
+            }
+            .filter-section {
+                margin-bottom: 15px;
+            }
+            .product-card {
+                padding: 15px;
+            }
+            .product-card h5 {
+                font-size: 1rem;
+            }
+            .product-card .price {
+                font-size: 1.2rem;
+            }
+            .btn-add-to-cart {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+        }

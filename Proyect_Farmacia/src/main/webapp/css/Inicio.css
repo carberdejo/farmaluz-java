@@ -1,0 +1,226 @@
+
+    .content-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        color: #343a40;
+        font-weight: 600;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Estilos del carrusel */
+    .carousel-container {
+        max-width: 900px; /* Ancho máximo para el slider */
+        margin: 0 auto; /* Centrar el slider */
+        border-radius: 15px;
+        overflow: hidden; /* Asegura que las imágenes redondeadas no se salgan */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra para el slider */
+        margin-top: 30px; /* Espacio superior */
+        margin-bottom: 30px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 350px; /* Altura fija para las imágenes del slider */
+        object-fit: cover; /* Recorta la imagen para cubrir el área */
+        border-radius: 15px; /* Bordes redondeados para las imágenes */
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-item img:hover {
+        transform: scale(1.03); /* Efecto zoom al pasar el ratón */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro para los iconos de control */
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background-color: #3B82F6; /* Color de los indicadores */
+    }
+
+    /* Estilos para la sección de notificaciones */
+    .notification-list .list-group-item {
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .notification-list .list-group-item:hover {
+        background-color: #f8f9fa;
+        transform: translateY(-2px);
+    }
+
+    .notification-icon {
+        font-size: 1.5rem;
+        margin-right: 15px;
+        color: var(--primary-gradient); /* Usar gradiente para iconos */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: rgba(102, 126, 234, 0.1);
+        flex-shrink: 0; /* Evitar que el icono se encoja */
+    }
+    
+    .notification-list .list-group-item.unread {
+        background: rgba(59, 130, 246, 0.05); /* Ligeramente azulado para no leídas */
+        border-left: 5px solid var(--primary-gradient); /* Borde indicador */
+    }
+
+    .notification-content {
+        flex-grow: 1;
+    }
+
+    .notification-content h6 {
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: #343a40;
+    }
+
+    .notification-content p {
+        font-size: 0.9rem;
+        color: #6c757d;
+        margin-bottom: 0;
+    }
+    .notification-date {
+        font-size: 0.8rem;
+        color: #adb5bd;
+        margin-left: 20px;
+        flex-shrink: 0;
+        text-align: right;
+    }
+
+    /* ESTILOS PARA LAS CAJAS DE ACCESO DIRECTO A REPORTES */
+    .report-card {
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        padding: 25px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Espacia el contenido verticalmente */
+        height: 100%; /* Asegura que todas las tarjetas en una fila tengan la misma altura */
+    }
+
+    .report-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .report-card img {
+        max-width: 100px; /* Tamaño de la imagen */
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .report-card:hover img {
+        transform: scale(1.05);
+    }
+
+    .report-card h5 {
+        font-weight: 600;
+        color: #343a40;
+        margin-bottom: 10px;
+        font-size: 1.15rem;
+    }
+
+    .report-card p {
+        font-size: 0.9rem;
+        color: #6c757d;
+        margin-bottom: 20px;
+        flex-grow: 1; /* Permite que el párrafo ocupe el espacio disponible */
+    }
+
+    .report-card .btn-report {
+        background: var(--primary-gradient);
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        text-decoration: none; /* Asegura que sea un enlace sin subrayado */
+        display: inline-block; /* Para que el padding y margen funcionen bien */
+    }
+
+    .report-card .btn-report:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        opacity: 0.9;
+    }
+
+    /* Media Queries para Responsividad */
+    @media (max-width: 768px) {
+        .main-content-area {
+            margin: 10px;
+            padding: 20px;
+            margin-left: 0; /* Ocupa todo el ancho en móvil */
+        }
+        .header-section {
+            padding: 15px;
+        }
+        .header-section h2 {
+            font-size: 1.5rem;
+        }
+        .content-card {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        .carousel-item img {
+            height: 200px; /* Menor altura en móviles */
+        }
+        .notification-list .list-group-item {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .notification-icon {
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+        .notification-date {
+            margin-left: 0;
+            width: 100%;
+            text-align: left;
+            margin-top: 5px;
+        }
+        /* Ajustes para las cajas de reportes en móviles */
+        .report-card {
+            padding: 20px;
+        }
+        .report-card img {
+            max-width: 80px;
+        }
+        .report-card h5 {
+            font-size: 1rem;
+        }
+        .report-card p {
+            font-size: 0.85rem;
+        }
+    }

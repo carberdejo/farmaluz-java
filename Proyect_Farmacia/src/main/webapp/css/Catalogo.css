@@ -1,0 +1,131 @@
+.btn-gradient {
+            background: var(--success-gradient);
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 12px 25px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(17, 153, 142, 0.3);
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(17, 153, 142, 0.4);
+            color: white;
+        }
+
+        /* Estilos específicos para las tarjetas de producto */
+        .product-card {
+            background: white;
+            border: none; /* Eliminar borde de bootstrap original */
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); /* Sombra suave */
+        }
+        .product-card:hover {
+            transform: translateY(-5px); /* Pequeño levantamiento */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+        }
+        
+        .product-card img {
+            max-height: 180px; /* Tamaño fijo para imágenes */
+            object-fit: contain; /* Para que la imagen no se recorte */
+            margin-bottom: 15px;
+            border-radius: 8px; /* Pequeño radio para las imágenes */
+        }
+
+        .product-card h5 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #34495e;
+        }
+        
+        .product-card p {
+            font-size: 0.95rem;
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+
+        .product-card .price {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #dc3545; /* Rojo de peligro de Bootstrap */
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .btn-add-to-cart {
+            background: var(--primary-gradient);
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 10px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            width: 100%; /* Ocupar todo el ancho */
+            margin-top: auto; /* Empujar al final de la tarjeta */
+        }
+        
+        .btn-add-to-cart:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            color: white;
+        }
+
+        /* Estilos para filtros y búsqueda */
+        .filter-section {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .filter-section h4 {
+            font-weight: 600;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .form-control, .form-select {
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+            color: #495057;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .btn-filter, .btn-search {
+            background: var(--success-gradient);
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-filter:hover, .btn-search:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+            color: white;
+        }
